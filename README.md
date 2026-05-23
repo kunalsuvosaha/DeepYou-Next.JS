@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DeepYou - Discover Yourself 🧠✨
 
-## Getting Started
+DeepYou is a modern, AI-powered full-stack web application that helps users discover the depths of their personality through psychological analysis. By leveraging the Gemini AI API, DeepYou provides deep, meaningful, and actionable insights based on user responses.
 
-First, run the development server:
+## 🚀 Features
+- **Dynamic Personality Quiz:** A smooth, interactive quiz experience built with React and Framer Motion.
+- **AI-Powered Insights:** Connects to Google's Gemini Flash model to generate personalized psychological profiles in real-time.
+- **Glassmorphism UI:** A sleek, dreamy, and modern interface with custom pastel gradients and floating micro-animations.
+- **Serverless Architecture:** Fully migrated to the Next.js App Router, enabling seamless API routes and easy Vercel deployments.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
+- **Frontend:** Next.js (App Router), React, Framer Motion, Lucide React
+- **Backend:** Next.js Serverless API Routes
+- **AI Integration:** Google Generative AI (`@google/generative-ai`)
+- **Styling:** Custom Vanilla CSS with CSS Variables and Animations
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💻 Running Locally
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Prerequisites
+Make sure you have Node.js installed, and an active API key from Google AI Studio.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/kunalsuvosaha/DeepYou-Next.JS.git
+   cd DeepYou-Next.JS
+   ```
 
-## Learn More
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Set up Environment Variables:**
+   Create a `.env` file in the root of the project and add your Gemini API key:
+   ```env
+   API_KEY=your_gemini_api_key_here
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Start the Development Server:**
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. **Open the App:**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser to start your journey to self-understanding!
 
-## Deploy on Vercel
+## 📦 Deployment
+This project is optimized for zero-configuration deployment on [Vercel](https://vercel.com).
+1. Push your code to GitHub.
+2. Import the repository into Vercel.
+3. Add the `API_KEY` to the Vercel Environment Variables settings.
+4. Deploy!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Built with ❤️ for deep thinkers and self-discoverers.*
